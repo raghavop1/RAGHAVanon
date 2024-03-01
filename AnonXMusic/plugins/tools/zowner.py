@@ -5,17 +5,17 @@ import os
 import re
 import asyncio
 import time
-from VIPMUSIC import app
-from VIPMUSIC.utils.database import add_served_chat, delete_served_chat
+from AnonXMusic import app
+from AnonXMusic.utils.database import add_served_chat, delete_served_chat
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-from VIPMUSIC.utils.database import get_assistant
+from AnonXMusic.utils.database import get_assistant
 import asyncio
-from VIPMUSIC.misc import SUDOERS
-from VIPMUSIC.mongo.afkdb import HEHE
-from VIPMUSIC.core.userbot import Userbot
+from AnonXMusic.misc import SUDOERS
+from AnonXMusic.mongo.afkdb import HEHE
+from AnonXMusic.core.userbot import Userbot
 from pyrogram import Client, filters
 from pyrogram.errors import UserAlreadyParticipant
-from VIPMUSIC import app
+from AnonXMusic import app
 import asyncio
 import random
 from pyrogram import Client, filters
@@ -26,23 +26,23 @@ from pyrogram.errors import (
     UserAlreadyParticipant,
     UserNotParticipant,
 )
-from VIPMUSIC import app
-from VIPMUSIC.utils.vip_ban import admin_filter
-from VIPMUSIC.utils.decorators.userbotjoin import UserbotWrapper
-from VIPMUSIC.utils.database import get_assistant, is_active_chat
+from AnonXMusic import app
+from AnonXMusic.utils.vip_ban import admin_filter
+from AnonXMusic.utils.decorators.userbotjoin import UserbotWrapper
+from AnonXMusic.utils.database import get_assistant, is_active_chat
 
 @app.on_message(
     filters.command("repo")
     & filters.group)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/4b52da6d880cbb199298a.jpg",
-        caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐆𝐄𝐓🌱𝐑𝐄𝐏𝐎🍁""",
+        photo=f"https://graph.org/file/df69a8f00af264a06dd38.jpg",
+        caption=f"""🍁𝘊𝘓𝘐𝘊𝘒 𝘉𝘌𝘓𝘖𝘞 𝘛𝘖 𝘒𝘕𝘖𝘞 𝘈𝘉𝘖𝘜𝘛 𝘖𝘞𝘕𝘌𝘙🍁""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🌱ƨσʋяcɛ🌱", url=f"https://github.com/THE-VIP-BOY-OP/VIP-MUSIC")
+                        "𝘖𝘞𝘕𝘌𝘙🍁", url=f"https://t.me/LOOK_AT_RAGHAV")
                 ]
             ]
         ),
@@ -54,13 +54,13 @@ async def help(client: Client, message: Message):
 async def help(client: Client, message: Message):
     userbot = await get_assistant(chat_id)
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/4b52da6d880cbb199298a.jpg",
-        caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐆𝐄𝐓🌱𝐑𝐄𝐏𝐎🍁""",
+        photo=f"https://graph.org/file/df69a8f00af264a06dd38.jpg",
+        caption=f"""🍁𝘊𝘓𝘐𝘊𝘒 𝘉𝘌𝘓𝘖𝘞 𝘛𝘖 𝘒𝘕𝘖𝘞 𝘈𝘉𝘖𝘜𝘛 𝘖𝘞𝘕𝘌𝘙🍁""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🌱ƨσʋяcɛ🌱", url=f"https://github.com/THE-VIP-BOY-OP/VIP-MUSIC")
+                        "𝘖𝘞𝘕𝘌𝘙🍁", url=f"https://t.me/LOOK_AT_RAGHAV")
                 ]
             ]
         ),
@@ -71,13 +71,13 @@ async def help(client: Client, message: Message):
     & filters.private)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/4b52da6d880cbb199298a.jpg",
-        caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐆𝐄𝐓🌱𝐑𝐄𝐏𝐎🍁""",
+        photo=f"https://graph.org/file/df69a8f00af264a06dd38.jpg",
+        caption=f"""🍁𝘊𝘓𝘐𝘊𝘒 𝘉𝘌𝘓𝘖𝘞 𝘛𝘖 𝘒𝘕𝘖𝘞 𝘈𝘉𝘖𝘜𝘛 𝘖𝘞𝘕𝘌𝘙🍁""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🌱ƨσʋяcɛ🌱", url=f"https://github.com/THE-VIP-BOY-OP/VIP-MUSIC")
+                        "𝘖𝘞𝘕𝘌𝘙🍁", url=f"https://t.me/LOOK_AT_RAGHAV")
                 ]
             ]
         ),
@@ -103,7 +103,7 @@ import time
 async def add_all(client, message):
     command_parts = message.text.split(" ")
     if len(command_parts) != 2:
-        await message.reply("**⚠️ ɪɴᴠᴀʟɪᴅ ᴄᴏᴍᴍᴀɴᴅ ғᴏʀᴍᴀᴛ. ᴘʟᴇᴀsᴇ ᴜsᴇ ʟɪᴋᴇ » `/gadd @TG_VC_BOT`**")
+        await message.reply("**⚠️ ɪɴᴠᴀʟɪᴅ ᴄᴏᴍᴍᴀɴᴅ ғᴏʀᴍᴀᴛ. ᴘʟᴇᴀsᴇ ᴜsᴇ ʟɪᴋᴇ » `/gadd @Freemusicspotify_bot`**")
         return
     
     bot_username = command_parts[1]
@@ -116,7 +116,7 @@ async def add_all(client, message):
         lol = await message.reply("🔄 **ᴀᴅᴅɪɴɢ ɢɪᴠᴇɴ ʙᴏᴛ ɪɴ ᴀʟʟ ᴄʜᴀᴛs!**")
         
         async for dialog in userbot.get_dialogs():
-            if dialog.chat.id == -1002120144597:
+            if dialog.chat.id == -1002100894623:
                 continue
             try:
                 await userbot.add_chat_members(dialog.chat.id, app_id)
