@@ -147,7 +147,7 @@ async def mentionall(client, message):
         usrnum += 1
         usrtxt +=  f"[{usr.first_name}](tg://user?id={usr.id}), "
 
-        if usrnum == 15:
+        if usrnum == 10:
             if mode == "text_on_cmd":
                 txt = f"{usrtxt} {random.choice(TAGMES)}"
                 await client.send_message(chat_id, txt)
@@ -193,7 +193,7 @@ async def mention_allvc(client, message):
             continue
         usrnum += 1
         usrtxt +=  f"[{usr.first_name}](tg://user?id={usr.id}), "
-        if usrnum == 1:
+        if usrnum == 10:
             txt = f"{usrtxt} {random.choice(VC_TAG)}"
             await client.send_message(chat_id, txt)
             await asyncio.sleep(4)
