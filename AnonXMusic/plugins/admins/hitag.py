@@ -255,9 +255,9 @@ async def mentionall(client, message):
         if usr.user.is_bot:
             continue
         usrnum += 1
-        usrtxt +=  f"[{usr.first_name}](tg://user?id={usr.id}), "
+        usrtxt += f"\n⊚ [{m.user.first_name}](tg://user?id={m.user.id})\n"
 
-        if usrnum == 15:
+        if usrnum == 5:
             if mode == "text_on_cmd":
                 txt = f"{usrtxt} {random.choice(TAGMES)}"
                 await client.send_message(chat_id, txt)
@@ -302,9 +302,9 @@ async def mention_allvc(client, message):
         if usr.user.is_bot:
             continue
         usrnum += 1
-        usrtxt +=  f"[{usr.first_name}](tg://user?id={usr.id}), "
+        usrtxt += f"\n⊚ [{m.user.first_name}](tg://user?id={m.user.id})\n"
 
-        if usrnum == 15:
+        if usrnum == 5:
             txt = f"{usrtxt} {random.choice(VC_TAG)}"
             await client.send_message(chat_id, txt)
             await asyncio.sleep(4)
